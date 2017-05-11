@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="SetupWizard">
 		<section name="ProgressPage">
+			<item value="true" key="dismissAutomatically"/>
 		</section>
 		<section name="ConfirmationPage">
 		</section>

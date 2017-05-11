@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
-<fullyQualifiedTypeName name="main.problem.KeyValueStore"/>
-<fullyQualifiedTypeName name="java.lang.Boolean"/>
-<fullyQualifiedTypeName name="main.problem.Solution"/>
 <fullyQualifiedTypeName name="org.junit.runner.JUnitCore"/>
 <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
 <fullyQualifiedTypeName name="org.junit.runner.notification.Failure"/>
 <fullyQualifiedTypeName name="org.junit.runner.Result"/>
 <fullyQualifiedTypeName name="junit.framework.TestCase"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="main.problem.Solution"/>
+<fullyQualifiedTypeName name="javax.management.OperationsException"/>
+<fullyQualifiedTypeName name="org.apache.commons.cli.Options"/>
+<fullyQualifiedTypeName name="org.apache.commons.cli.CommandLine"/>
+<fullyQualifiedTypeName name="org.apache.commons.cli.CommandLineParser"/>
+<fullyQualifiedTypeName name="org.apache.commons.cli.DefaultParser"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+<fullyQualifiedTypeName name="main.problem.KeyValueStore"/>
+<fullyQualifiedTypeName name="main.problem.PersistData"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
 </qualifiedTypeNameHistroy>

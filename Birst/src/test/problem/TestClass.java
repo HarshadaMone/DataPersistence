@@ -14,7 +14,6 @@ public class TestClass extends TestCase {
 	@Test
 	public void testStdInput() throws IOException {	
 	      
-		  Boolean flag = true;
 		  KeyValueStore kvs = new KeyValueStore();
 		  String[] input = {"CREATE harshada=mone","CREATE parvez=patel","GET harshada","CREATE colonnade/harshada=mone","CREATE colonnade/ankur=soni","CREATE colonnade.priyanka=bongale","GETALL","GET colonnade","DELETE colonnade.harshada","Quit"};
 		  for(int i=0;i<input.length-1;i++){

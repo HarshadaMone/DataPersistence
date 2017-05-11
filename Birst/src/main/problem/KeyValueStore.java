@@ -11,10 +11,18 @@ public class KeyValueStore {
 
 	private HashMap<String, String> store = new HashMap<>();
 	
-	public KeyValueStore(){
-		
+
+	public KeyValueStore() {
+		// TODO Auto-generated constructor stub
+	}
+	public KeyValueStore(HashMap<String,String> store){
+		this.store = store; 
 	}
 
+
+	public HashMap<String, String> getStore() {
+		return store;
+	}
 	public void getAll() {
 
 		Set<Entry<String, String>> s = store.entrySet();
