@@ -14,17 +14,14 @@ public class TestClass extends TestCase {
 	@Test
 	public void testStdInput() throws IOException {	
 	      
+		  //Validate Input Commands 
+		  //Assumption only a-z,A-Z and /is used as key 
 		  KeyValueStore kvs = new KeyValueStore();
-		  // Test case to check against different inputs
-		  String[] input = {"CREATE harshada=mone","CREATE parvez=patel","GET harshada","CREATE colonnade/harshada=mone","CREATE colonnade/ankur=soni","CREATE colonnade.priyanka=bongale","GETALL","GET colonnade","DELETE colonnade.harshada","Quit"};
-		  for(int i=0;i<input.length-1;i++){
-		  System.out.println("Inside testSTdInput for input  "+ input[i]);    
-		  String[] expected = input[i].split(" ");
-	      assertEquals(expected[0], s.performOperation(input[i], kvs));
-		  }
-		  
-		  
-		  
+		  s.performOperation("CREATE colonnade.harshada=mone", kvs);
+		  assertEquals("Test for invalid character input",false,kvs.get("colonnade/harshada=mone"));
+		  s.performOperation("CREATE harshada=", kvs);
+		  assertEquals("Test for invalid command",false,kvs.get("harshada"));
+		  s.performOperation("CREATE harshada=mone", kvs);
 	}
 	
 	@Test

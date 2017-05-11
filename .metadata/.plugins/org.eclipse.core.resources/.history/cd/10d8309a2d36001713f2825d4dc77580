@@ -1,0 +1,10 @@
+package test.problem;
+
+public class TestFunctions {
+
+	@DataProvider
+	public String[] inputCommands(){
+		return new String[] {"CREATE harshada=mone","CREATE parvez=patel","GET harshada","CREATE colonnade/harshada=mone","CREATE colonnade/ankur=soni","CREATE colonnade.priyanka=bongale","GETALL","GET colonnade","DELETE colonnade.harshada","Quit"};
+	}
+	
+}

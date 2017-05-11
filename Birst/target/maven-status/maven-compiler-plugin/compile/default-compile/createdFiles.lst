@@ -1,4 +1,6 @@
 main\problem\Solution.class
 test\problem\TestClass.class
+main\problem\PersistData.class
+test\problem\TestFunctions.class
 main\problem\KeyValueStore.class
 test\problem\TestRunner.class

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="91" started-at="2017-05-11T10:07:28Z" finished-at="2017-05-11T10:07:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="91" started-at="2017-05-11T10:07:28Z" finished-at="2017-05-11T10:07:28Z">
+      <class name="test.problem.TestFunctions">
+        <test-method status="PASS" signature="testInputCommands(java.lang.String, java.lang.String)[pri:0, instance:test.problem.TestFunctions@337d0578]" name="testInputCommands" duration-ms="20" started-at="2017-05-11T03:07:28Z" data-provider="inputCommands" finished-at="2017-05-11T03:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CREATE harshada=mone]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CREATE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputCommands -->
+        <test-method status="PASS" signature="testInputCommands(java.lang.String, java.lang.String)[pri:0, instance:test.problem.TestFunctions@337d0578]" name="testInputCommands" duration-ms="6" started-at="2017-05-11T03:07:28Z" data-provider="inputCommands" finished-at="2017-05-11T03:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GET harshada]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GET]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputCommands -->
+        <test-method status="PASS" signature="testInputCommands(java.lang.String, java.lang.String)[pri:0, instance:test.problem.TestFunctions@337d0578]" name="testInputCommands" duration-ms="8" started-at="2017-05-11T03:07:28Z" data-provider="inputCommands" finished-at="2017-05-11T03:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GETALL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GETALL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputCommands -->
+        <test-method status="PASS" signature="testInputCommands(java.lang.String, java.lang.String)[pri:0, instance:test.problem.TestFunctions@337d0578]" name="testInputCommands" duration-ms="9" started-at="2017-05-11T03:07:28Z" data-provider="inputCommands" finished-at="2017-05-11T03:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DELETE colonnade.harshada]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DELETE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputCommands -->
+        <test-method status="PASS" signature="testInputCommands(java.lang.String, java.lang.String)[pri:0, instance:test.problem.TestFunctions@337d0578]" name="testInputCommands" duration-ms="3" started-at="2017-05-11T03:07:28Z" data-provider="inputCommands" finished-at="2017-05-11T03:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Quit]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Quit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputCommands -->
+      </class> <!-- test.problem.TestFunctions -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

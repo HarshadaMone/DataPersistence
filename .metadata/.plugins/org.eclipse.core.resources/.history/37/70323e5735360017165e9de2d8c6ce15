@@ -1,0 +1,40 @@
+package test.problem;
+import main.problem.*;
+
+import java.io.IOException;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+public class TestClass extends TestCase {
+
+	private Solution s = new Solution();
+	
+	
+	@Test
+	public void testStdInput() throws IOException {	
+	      
+		  //Validate Input Commands
+		  KeyValueStore kvs = new KeyValueStore();
+		  s.performOperation("CREATE colonnade/harshada=mone", kvs);
+		  assertEquals("Test for invalid character input",false,kvs.get("colonnade/harshada=mone"));
+		  s.performOperation("CREATE harshada=", kvs);
+		  assertEquals("Test for invalid command",false,kvs.get("harshada"));
+		  s.performOperation("CREATE harshada=mone", kvs);
+	}
+	
+	@Test
+	public void testKeyValStore(){
+		  KeyValueStore kvs = new KeyValueStore();
+		  // Test create, update, Delete for different inputs
+		  assertEquals("Test Create",new Boolean(true),kvs.create("Harshada", "Mone"));
+		  assertEquals("Test Duplicate",new Boolean(false),kvs.create("Harshada+M", "one"));
+		  assertEquals("Test Delete for key that does not exist in store",false, kvs.delete("harsha"));
+		  assertEquals("Test Delete",true, kvs.delete("Harshada"));
+		  assertEquals("Test Update for key that does not exist in store",false, kvs.update("Harshada", "Mone"));
+		  kvs.create("Harshada", "Mone");
+		  assertEquals("Test Update",true, kvs.update("Harshada", "Mone"));
+	}
+	
+	
+}

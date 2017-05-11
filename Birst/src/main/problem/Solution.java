@@ -21,7 +21,8 @@ import org.apache.commons.cli.ParseException;
  * It provides user with CLI options like Clean-cache and File, 
  * to reset the Key-Value store and to read commands 
  * and input through file respectively.
- * It also implements Unit tests.
+ * It also implements Unit and Function tests using JUnit and TestNG.
+ *
  * 
  * @author Harshada
  *
@@ -66,7 +67,6 @@ public class Solution {
 						qflag = false;
 				} 
 				pd.serializeHashMap(kvs.getStore());
-				
 				flag = false;
 			}else{
 				br = new BufferedReader(new InputStreamReader(System.in));

@@ -1,0 +1,25 @@
+package test.problem;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import main.problem.KeyValueStore;
+import main.problem.Solution;
+
+public class TestFunctions {
+	private Solution s = new Solution();
+	KeyValueStore kvs = new KeyValueStore();
+	@DataProvider
+	public String[] inputCommands(){
+		return new String[] {"CREATE harshada=mone","CREATE parvez=patel","GET harshada","CREATE colonnade/harshada=mone","CREATE colonnade/ankur=soni","CREATE colonnade.priyanka=bongale","GETALL","GET colonnade","DELETE colonnade.harshada","Quit"};
+	}
+	
+	@Test(dataProvider = "inputCommands")
+	public void testInputCommands(String input){
+		
+		String[] expected = input.split(" ");
+		Assert.assertEquals(expected[0], s.performOperation(input, kvs));
+	}
+	
+}

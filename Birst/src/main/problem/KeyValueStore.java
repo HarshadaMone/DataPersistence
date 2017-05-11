@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-
+// Hashmap functions create, delete,get,update,getHashMap,Show Contents and Reset
 public class KeyValueStore {
 
 	private HashMap<String, String> store = new HashMap<>();
@@ -71,15 +71,19 @@ public class KeyValueStore {
 		}
 	}	
 	
-	public void get(String key){
+	public boolean get(String key){
+		Boolean found = false;
 		Set<Entry<String, String>> s = store.entrySet();
 		Iterator<Entry<String, String>> itr = s.iterator();
 		while(itr.hasNext()){
 			Map.Entry me = itr.next();
 			if(((String) me.getKey()).contains(key)){
 				System.out.println(me.getKey()+"="+me.getValue());
+				found =false;
+				break;
 			}
 		}
+		return found;
 	}
 	
 	public void reset(){
