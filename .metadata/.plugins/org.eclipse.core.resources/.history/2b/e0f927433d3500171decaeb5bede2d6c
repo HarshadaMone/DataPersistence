@@ -1,0 +1,18 @@
+package main.problem;
+
+public class Solution {
+
+	public static void main(String[] args){
+		
+		
+		KeyValueStore kvs = new KeyValueStore();
+		kvs.create("Harshada", "Mone");
+		kvs.get("Harshada");
+		kvs.update("Harshada", "Ravindra");
+		kvs.create("Parvez", "Gaddar");
+		kvs.getAll();
+		
+	}
+	
+	
+}

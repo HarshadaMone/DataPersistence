@@ -1,0 +1,9 @@
+package main.problem;
+
+public class KeyValueStore {
+
+	private HashMap<String, String> store = new 
+	
+	
+	
+}

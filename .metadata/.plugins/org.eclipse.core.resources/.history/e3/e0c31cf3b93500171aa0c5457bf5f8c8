@@ -1,0 +1,75 @@
+package main.problem;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import javax.management.OperationsException;
+
+import org.apache.commons.cli.Options;
+
+public class Solution {
+
+	public static void main(String[] args) throws IOException{
+		
+		Solution s = new Solution();
+
+		option.addOption("clear-cache",false,"Clear persisted values on startup");
+		
+		KeyValueStore kvs = new KeyValueStore();
+		if(System.getProperty("clean") == null){
+		
+			System.out.println("In Clean Cache");
+		}	
+	
+		BufferedReader br = null;
+		boolean flag = true;
+		while(flag){
+			br = new BufferedReader(new InputStreamReader(System.in));
+			String userInput = br.readLine();
+			if(System.getProperty("file") != null){
+				System.out.println("Arg "+ args[0]);
+				s.performOperation(userInput, kvs, flag);
+				
+			}else{
+				s.performOperation(userInput, kvs, flag);
+			}
+			
+			
+			
+		}
+		
+	}
+	
+	public Boolean performOperation(String userInput,KeyValueStore kvs, Boolean flag){
+		
+		String[] input = userInput.split(" ");
+		String[] keyVal;
+		switch(input[0]){
+			
+			case "CREATE" : keyVal = input[1].split("=");
+							kvs.create(keyVal[0], keyVal[1]);
+							break;
+		
+			case "UPDATE" : keyVal = input[1].split("=");
+							kvs.update(keyVal[0], keyVal[1]);
+							break;							
+			
+			case "GET" : 	kvs.get(input[1]);
+							break;
+			
+			case "DELETE" : kvs.delete(input[1]);
+							break;
+			
+			case "GETALL" : kvs.getAll();
+							break;
+							
+			case "QUIT" : 	flag = false;
+							break;
+							
+			default : System.out.println("Enter valid input");
+		}
+		
+		return flag;
+	}
+}

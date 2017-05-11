@@ -1,0 +1,26 @@
+package test.problem;
+import main.problem.*;
+
+import java.io.IOException;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+public class TestClass extends TestCase {
+
+	private Solution s = new Solution();
+	
+	
+	@Test
+	   public void testStdInput() throws IOException {	
+	      
+		  Boolean flag = true;
+		  KeyValueStore kvs = new KeyValueStore();
+		  String[] input = {"CREATE harshada=mone","CREATE parvez=patel","GET harshada","CREATE colonnade.harshada=mone","CREATE colonnade.ankur=soni","CREATE colonnade.priyanka=bongale","GETALL","GET colonnade","DELETE colonnade.harshada","Quit"};
+		  for(int i=0;i<input.length-1;i++){
+		  System.out.println("Inside test() returns "+ input[i]);    
+	      assertEquals(flag, s.performOperation(input[i], kvs, true));
+		  }
+	}
+	
+}

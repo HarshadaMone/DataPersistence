@@ -1,0 +1,42 @@
+package main.problem;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class ReadFromStdIn{
+
+	KeyValueStore kvs = new KeyValueStore();
+	BufferedReader br = null;
+	Boolean flag = true;
+	while(flag){
+		br = new BufferedReader(new InputStreamReader(System.in));
+		String userInput = br.readLine();
+		String[] input = userInput.split(" ");
+		String[] keyVal;
+		switch(input[0]){
+			
+			case "CREATE" : keyVal = input[1].split("=");
+							kvs.create(keyVal[0], keyVal[1]);
+							break;
+		
+			case "UPDATE" : keyVal = input[1].split("=");
+							kvs.update(keyVal[0], keyVal[1]);
+							break;							
+			
+			case "GET" : 	kvs.get(input[1]);
+							break;
+			
+			case "DELETE" : kvs.delete(input[1]);
+							break;
+			
+			case "GETALL" : kvs.getAll();
+							break;
+							
+			case "QUIT" : 	flag = false;
+							break;
+							
+			default : System.out.println("Enter valid input");
+		}
+	}
+	
+}	

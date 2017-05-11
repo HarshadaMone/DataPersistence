@@ -1,0 +1,19 @@
+package test.problem;
+import main.problem.*;
+
+import java.io.IOException;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+public class TestClass extends TestCase {
+
+	private Solution s = new Solution();
+	//String[] input = {"CREATE harshada=mone","CREATE parvez=patel","GET harshada","CREATE colonnade.harshada=mone","CREATE colonnade.ankur=soni","CREATE colonnade.priyanka=bongale","GETALL","GET colonnade","DELETE colonnade.harshada","Quit"};
+	@Test
+	   public void stdInput() throws IOException {	
+	      System.out.println("Inside test()");    
+	      s.main(new String[] {"CREATE"," ","harshada=mone"});
+	}
+}
