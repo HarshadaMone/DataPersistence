@@ -30,7 +30,6 @@ public class TestClass extends TestCase {
 	@Test
 	public void testKeyValStore(){
 		  KeyValueStore kvs = new KeyValueStore();
-		  // Test create, update, Delete for different inputs
 		  assertEquals("Test Create",new Boolean(true),kvs.create("Harshada", "Mone"));
 		  assertEquals("Test Duplicate",new Boolean(false),kvs.create("Harshada+M", "one"));
 		  assertEquals("Test Delete for key that does not exist in store",false, kvs.delete("harsha"));
